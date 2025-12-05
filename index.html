@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decathlon - Coaching Sportif Personnalisé</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">DECATHLON</div>
+            <nav>
+                <a href="#profil">Mon Profil</a>
+                <a href="#instructions">Instructions</a>
+                <a href="#visualisation">Visualisation</a>
+                <a href="#produits">Nos Produits</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Votre Coach Sportif Personnalisé</h1>
+            <p>Créez votre profil et recevez des instructions adaptées à vos objectifs</p>
+        </div>
+    </section>
+
+    <section id="profil" class="section">
+        <div class="container">
+            <h2>Niveau 1 : Profilage Sportif</h2>
+            <p class="subtitle">Établissons votre profil pour personnaliser votre expérience</p>
+            
+            <form id="qcm-form">
+                <div class="form-group">
+                    <label>Quel est votre niveau sportif actuel ?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="niveau" value="debutant"> Débutant</label>
+                        <label><input type="radio" name="niveau" value="intermediaire"> Intermédiaire</label>
+                        <label><input type="radio" name="niveau" value="avance"> Avancé</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Quels sports pratiquez-vous ?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="sports" value="yoga"> Yoga</label>
+                        <label><input type="checkbox" name="sports" value="musculation"> Musculation</label>
+                        <label><input type="checkbox" name="sports" value="cardio"> Cardio</label>
+                        <label><input type="checkbox" name="sports" value="natation"> Natation</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Quel est votre objectif principal ?</label>
+                    <select name="objectif">
+                        <option value="">Sélectionnez un objectif</option>
+                        <option value="perte-poids">Perte de poids</option>
+                        <option value="tonification">Tonification musculaire</option>
+                        <option value="souplesse">Améliorer la souplesse</option>
+                        <option value="endurance">Gagner en endurance</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary">Valider mon profil</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="instructions" class="section bg-light">
+        <div class="container">
+            <h2>Niveau 2 : Instructions Personnalisées</h2>
+            <p class="subtitle">Basées sur votre profil sportif</p>
+            
+            <div id="instructions-content" class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="icon">🧘</div>
+                    <h3>Échauffement</h3>
+                    <p><strong>Durée :</strong> 5-10 minutes</p>
+                    <p>Commencez par des rotations douces des articulations : cou, épaules, poignets, hanches, genoux et chevilles. Effectuez 10 rotations dans chaque sens pour préparer votre corps à l'effort.</p>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="icon">💪</div>
+                    <h3>Exercice Principal</h3>
+                    <p><strong>Durée :</strong> 20-30 minutes</p>
+                    <p>Réalisez 3 séries de 12 répétitions pour chaque exercice. Repos de 60 secondes entre les séries. Concentrez-vous sur la qualité du mouvement plutôt que sur la vitesse.</p>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="icon">🌟</div>
+                    <h3>Étirements</h3>
+                    <p><strong>Durée :</strong> 5-10 minutes</p>
+                    <p>Terminez par des étirements doux de tous les groupes musculaires sollicités. Maintenez chaque position 20-30 secondes sans rebondir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualisation" class="section">
+        <div class="container">
+            <h2>Niveau 3 : Illustration et Visualisation</h2>
+            <p class="subtitle">Visualisez les postures et mouvements corrects</p>
+            
+            <div class="visualization-grid">
+                <!-- Carte 1 : Yoga -->
+                <div class="exercise-demo">
+                    <div class="demo-video">
+                        <video controls>
+                            <source src="videos/yoga.mov" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <h3>Position de Yoga - Le Guerrier</h3>
+                    <div class="steps">
+                        <p><strong>1.</strong> Tenez-vous debout, pieds écartés largeur des hanches</p>
+                        <p><strong>2.</strong> Avancez le pied droit, pliez le genou à 90°</p>
+                        <p><strong>3.</strong> Levez les bras parallèles au sol</p>
+                        <p><strong>4.</strong> Regardez vers l'avant, maintenez 30 secondes</p>
+                    </div>
+                </div>
+
+                <!-- Carte 2 : Squat -->
+                <div class="exercise-demo">
+                    <div class="demo-video">
+                        <video controls>
+                            <source src="videos/squat.mov" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <h3>Squat Parfait</h3>
+                    <div class="steps">
+                        <p><strong>1.</strong> Pieds écartés largeur des épaules</p>
+                        <p><strong>2.</strong> Descendez en poussant les fesses vers l'arrière</p>
+                        <p><strong>3.</strong> Genoux alignés avec les orteils</p>
+                        <p><strong>4.</strong> Remontez en poussant sur les talons</p>
+                    </div>
+                </div>
+
+                <!-- Carte 3 : Planche -->
+                <div class="exercise-demo">
+                    <div class="demo-video">
+                        <video controls>
+                            <source src="videos/planche.mov" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <h3>Planche Abdominale</h3>
+                    <div class="steps">
+                        <p><strong>1.</strong> Positionnez-vous en appui sur les avant-bras</p>
+                        <p><strong>2.</strong> Corps aligné de la tête aux pieds</p>
+                        <p><strong>3.</strong> Contractez les abdominaux et fessiers</p>
+                        <p><strong>4.</strong> Maintenez 30 à 60 secondes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produits" class="section bg-light">
+        <div class="container">
+            <h2>Niveau 4 : Nos Produits Recommandés</h2>
+            <p class="subtitle">Équipement adapté à votre pratique sportive</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://contents.mediadecathlon.com/p2940263/k$a5497573eda45c1fa216dc2723cbb610/picture.jpg" alt="Tapis de Yoga Premium">
+                    </div>
+                    <h3>Tapis de Yoga Premium</h3>
+                    <p class="price">29,99 €</p>
+                    <p>Tapis antidérapant 5mm, parfait pour vos séances de yoga et pilates.</p>
+                   <a href="https://www.decathlon.fr/p/tapis-de-yoga-doux-adherence-et-confort-5-mm-vert-fonce-et-beige/_/R-p-344489?mc=8785799&c=beige_bleu" class="btn-secondary">Voir le produit</a>
+
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://contents.mediadecathlon.com/p2720139/k$6b43c2c58e9fa082aab3b113d42062c5/sq/kit-3-training-band-elastiques-15-25-35kg-avec-3-mois-offerts-freeletics.jpg" alt="Bandes de Résistance">
+                    </div>
+                    <h3>Bandes de Résistance</h3>
+                    <p class="price">14,99 €</p>
+                    <p>Set de 3 bandes avec résistances progressives pour le renforcement musculaire.</p>
+                    <a href="https://www.decathlon.fr/p/kit-3-training-band-elastiques-15-25-35kg-avec-3-mois-offerts-freeletics/_/R-p-373225?mc=8966621&c=bleu_orange_jaune" class="btn-secondary">Voir le produit</a>
+
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://contents.mediadecathlon.com/m16910115/k$6fc072fc2eb49f3ecb973bd4db7f9818/sq/ensemble-dhalteres-ajustables-vinyle-2-x-14-kg-28-kg.jpg" alt="Haltères Modulables">
+                    </div>
+                    <h3>Haltères Modulables</h3>
+                    <p class="price">49,99 €</p>
+                    <p>Paire d'haltères ajustables de 2 à 10kg, idéal pour l'entraînement à domicile.</p>
+                    <a href="https://www.decathlon.fr/p/mp/virtufit/ensemble-d-halteres-ajustables-vinyle-2-x-14-kg-28-kg/_/R-p-da135b91-7684-410c-9b30-5b11b24cb012?mc=da135b91-7684-410c-9b30-5b11b24cb012_c1&c=noir" class="btn-secondary">Voir le produit</a>
+
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://contents.mediadecathlon.com/p2917167/k$ee0afaba58e659d74409762a9df62805/sq/chaussures-de-fitness-et-training-flexibilite-et-stabilite-homme-energy-noir.jpg" alt="Chaussures Training">
+                    </div>
+                    <h3>Chaussures Training</h3>
+                    <p class="price">59,99 €</p>
+                    <p>Chaussures polyvalentes avec excellent maintien pour tous vos entraînements.</p>
+                    <a href="https://www.decathlon.fr/p/chaussures-de-sport-homme-essential-icon-noir-et-blanc/_/R-p-371993?mc=8961429&c=noir" class="btn-secondary">Voir le produit</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Decathlon - Tous droits réservés</p>
+            <p>Votre coach sportif personnalisé</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('qcm-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const niveau = document.querySelector('input[name="niveau"]:checked');
+            const sports = document.querySelectorAll('input[name="sports"]:checked');
+            const objectif = document.querySelector('select[name="objectif"]').value;
+            
+            if (!niveau || sports.length === 0 || !objectif) {
+                alert('Veuillez remplir tous les champs du questionnaire');
+                return;
+            }
+            
+            alert('Profil enregistré avec succès ! Vos instructions personnalisées sont affichées ci-dessous.');
+            document.getElementById('instructions').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
